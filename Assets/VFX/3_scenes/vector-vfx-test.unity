@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 2
+    serializedVersion: 3
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    accuratePlacement: 0
+    buildHeightMesh: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -250,6 +250,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 3
           m_NumAlphaKeys: 2
         m_Name: Gradient
@@ -394,6 +395,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 3
           m_NumAlphaKeys: 2
         m_Name: Color Gradient
@@ -480,7 +482,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!73398921 &130495441
 VFXRenderer:
   serializedVersion: 1
@@ -489,8 +491,8 @@ VFXRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130495440}
-  m_Enabled: 0
-  m_CastShadows: 0
+  m_Enabled: 1
+  m_CastShadows: 1
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
   m_StaticShadowCaster: 0
@@ -593,6 +595,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 4
           m_NumAlphaKeys: 2
         m_Name: Color Over Life
@@ -612,7 +615,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 130495440}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 5.77, y: 0, z: 1.06}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -827,6 +830,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 2
           m_NumAlphaKeys: 2
         m_Name: Color Over Life
@@ -858,6 +862,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 4
           m_NumAlphaKeys: 2
         m_Name: Initial Color Cycle
@@ -1259,6 +1264,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 3
           m_NumAlphaKeys: 2
         m_Name: Gradient
@@ -1421,6 +1427,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 2
           m_NumAlphaKeys: 2
         m_Name: Gradient
@@ -1643,6 +1650,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 3
           m_NumAlphaKeys: 2
         m_Name: Gradient
@@ -1882,6 +1890,7 @@ MonoBehaviour:
   m_ShadowLayerMask: 1
   m_LightCookieSize: {x: 1, y: 1}
   m_LightCookieOffset: {x: 0, y: 0}
+  m_SoftShadowQuality: 1
 --- !u!1 &1222740193
 GameObject:
   m_ObjectHideFlags: 0
@@ -2121,6 +2130,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 3
           m_NumAlphaKeys: 2
         m_Name: Gradient
@@ -2317,6 +2327,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 4
           m_NumAlphaKeys: 2
         m_Name: Color Over Life
@@ -2348,6 +2359,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 3
           m_NumAlphaKeys: 2
         m_Name: Initial Color Cycle
@@ -2603,8 +2615,8 @@ VisualEffect:
           key5: {r: 0, g: 0, b: 0, a: 0}
           key6: {r: 0, g: 0, b: 0, a: 0}
           key7: {r: 0, g: 0, b: 0, a: 0}
-          ctime0: 33103
-          ctime1: 36815
+          ctime0: 30069
+          ctime1: 37972
           ctime2: 0
           ctime3: 0
           ctime4: 0
@@ -2620,6 +2632,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: 1
           m_NumColorKeys: 2
           m_NumAlphaKeys: 2
         m_Name: Color Gradient
@@ -2721,9 +2734,17 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
+  m_Iso: 200
+  m_ShutterSpeed: 0.005
+  m_Aperture: 16
+  m_FocusDistance: 10
+  m_FocalLength: 50
+  m_BladeCount: 5
+  m_Curvature: {x: 2, y: 11}
+  m_BarrelClipping: 0.25
+  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
-  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -2983,6 +3004,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 2
           m_NumAlphaKeys: 2
         m_Name: Gradient
@@ -3168,6 +3190,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 5
           m_NumAlphaKeys: 4
         m_Name: Color Over Life
@@ -3199,6 +3222,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 4
           m_NumAlphaKeys: 2
         m_Name: Initial Color Cycle
@@ -3370,6 +3394,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 2
           m_NumAlphaKeys: 2
         m_Name: Gradient
@@ -3645,6 +3670,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 2
           m_NumAlphaKeys: 2
         m_Name: Gradient
@@ -4003,6 +4029,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 2
           m_NumAlphaKeys: 2
         m_Name: Color Gradient
@@ -4153,6 +4180,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 2
           m_NumAlphaKeys: 2
         m_Name: Color Gradient
@@ -4309,6 +4337,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 5
           m_NumAlphaKeys: 2
         m_Name: Color Over Life
@@ -4474,6 +4503,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 2
           m_NumAlphaKeys: 2
         m_Name: Color Gradient
@@ -4609,6 +4639,7 @@ VisualEffect:
           atime6: 0
           atime7: 0
           m_Mode: 0
+          m_ColorSpace: -1
           m_NumColorKeys: 2
           m_NumAlphaKeys: 2
         m_Name: Color Gradient
