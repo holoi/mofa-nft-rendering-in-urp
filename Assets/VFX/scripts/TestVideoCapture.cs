@@ -7,16 +7,18 @@ using System.Collections;
 public class TestVideoCapture : MonoBehaviour
 {
     int _index = 0;
-    bool _startRcord = false;
+    [SerializeField] bool _startRcord = false;
 
     //
-    RecorderControllerSettings controllerSettings;
-    RecorderController TestRecorderController;
+    RecorderControllerSettings _controllerSettings;
+    RecorderController _recorderController;
+    MovieRecorderSettings _moiveRecorderSettings;
 
     // This function gets called when entering Play Mode. We configure the Recorder and start it.
     private void OnEnable()
     {
         CreateRecorder();
+
     }
     private void Update()
     {
@@ -24,45 +26,48 @@ public class TestVideoCapture : MonoBehaviour
         {
             _index++;
             _startRcord = false;
-            StartRecordVideo();
+            StartRecord();
         }
     }
 
     void CreateRecorder()
     {
-         controllerSettings = ScriptableObject.CreateInstance<RecorderControllerSettings>();
-         TestRecorderController = new RecorderController(controllerSettings);
-        var videoRecorder = ScriptableObject.CreateInstance<MovieRecorderSettings>();
+         _controllerSettings = ScriptableObject.CreateInstance<RecorderControllerSettings>();
+         _recorderController = new RecorderController(_controllerSettings);
+         _moiveRecorderSettings = ScriptableObject.CreateInstance<MovieRecorderSettings>();
         var videoRecorderSettings = new CoreEncoderSettings();
         videoRecorderSettings.EncodingQuality = CoreEncoderSettings.VideoEncodingQuality.High;
 
-        videoRecorder.name = "My Video Recorder";
-        videoRecorder.Enabled = true;
-        videoRecorder.EncoderSettings = videoRecorderSettings;
+        _moiveRecorderSettings.name = "My Video Recorder";
+        _moiveRecorderSettings.Enabled = true;
+        _moiveRecorderSettings.EncoderSettings = videoRecorderSettings;
 
-        videoRecorder.ImageInputSettings = new GameViewInputSettings
+        _moiveRecorderSettings.ImageInputSettings = new GameViewInputSettings
         {
             OutputWidth = 256,
             OutputHeight = 256
         };
 
-        videoRecorder.AudioInputSettings.PreserveAudio = true;
-        videoRecorder.OutputFile = "C: \\Users\\18861\\Documents\\Unity Repo\\MagicsInsideVectorField\\Recordings";
-        
+        _moiveRecorderSettings.AudioInputSettings.PreserveAudio = true;
 
-        controllerSettings.AddRecorderSettings(videoRecorder);
-        controllerSettings.SetRecordModeToFrameInterval(0, 59); // 2s @ 30 FPS
-        controllerSettings.FrameRate = 30;
+        _controllerSettings.AddRecorderSettings(_moiveRecorderSettings);
+        _controllerSettings.SetRecordModeToFrameInterval(0, 59); // 2s @ 30 FPS
+        _controllerSettings.FrameRate = 30;
 
         RecorderOptions.VerboseMode = false;
+
     }
 
-    void StartRecordVideo()
+    void StartRecord()
     {
-        TestRecorderController.PrepareRecording();
-        TestRecorderController.StartRecording();
+        _moiveRecorderSettings.OutputFile = Application.dataPath + "/../RecordingTests/movie-"+_index;
+        _recorderController.PrepareRecording();
+        _recorderController.StartRecording();
+    }
 
-        // Wait a while
+    void ResetScene()
+    {
+
     }
 
     IEnumerator WaitRecorderReady()
