@@ -101,3 +101,4 @@ sysinfo.txt
 # Builds
 /*.apk
 RecordingTests
+Packages/com.unity.render-pipelines.universal@14.0.2

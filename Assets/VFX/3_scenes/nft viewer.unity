@@ -612,7 +612,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767c9f95c0dda4d4da5c0e3d09796a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  renderTexture: {fileID: 0}
+  _startRcord: 0
 --- !u!1 &584020138
 GameObject:
   m_ObjectHideFlags: 0
