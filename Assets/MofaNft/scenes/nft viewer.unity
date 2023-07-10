@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.17876178, g: 0.22383368, b: 0.30573976, a: 1}
+  m_IndirectSpecularColor: {r: 0.178761, g: 0.2238326, b: 0.30573758, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -316,10 +316,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 767c9f95c0dda4d4da5c0e3d09796a9f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _index: 0
   _startRcord: 0
-  _controllerSettings: {fileID: 0}
-  _moiveRecorderSettings: {fileID: 0}
 --- !u!1 &584400247
 GameObject:
   m_ObjectHideFlags: 0
@@ -369,19 +366,6 @@ MonoBehaviour:
   folderBaseName: Screenshots
   frameRate: 24
   framesToCapture: 72
-  folderName: 
-  whiteCamGameObject: {fileID: 0}
-  whiteCam: {fileID: 0}
-  whiteCamAddData: {fileID: 0}
-  blackCamGameObject: {fileID: 0}
-  blackCam: {fileID: 0}
-  blackCamAddData: {fileID: 0}
-  mainCam: {fileID: 0}
-  videoFrame: 0
-  originalTimescaleTime: 0
-  done: 0
-  screenWidth: 0
-  screenHeight: 0
   textureBlack: {fileID: 0}
   textureWhite: {fileID: 0}
   textureTransparentBackground: {fileID: 0}
@@ -1045,11 +1029,10 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1340229676
 GameObject:
   m_ObjectHideFlags: 3
@@ -1847,11 +1830,10 @@ Animator:
   m_ApplyRootMotion: 0
   m_LinearVelocityBlending: 0
   m_StabilizeFeet: 0
-  m_AnimatePhysics: 0
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
+  m_KeepAnimatorStateOnDisable: 0
 --- !u!1 &1816001618
 GameObject:
   m_ObjectHideFlags: 0
