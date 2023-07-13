@@ -687,9 +687,9 @@ VisualEffectResource:
       reflectionProbeUsage: 0
       lightProbeUsage: 0
     m_CullingFlags: 3
-    m_UpdateMode: 0
-    m_PreWarmDeltaTime: 0.05
-    m_PreWarmStepCount: 0
+    m_UpdateMode: 1
+    m_PreWarmDeltaTime: 0.01
+    m_PreWarmStepCount: 1000
     m_InitialEventName: OnPlay
     m_InstancingMode: -1
     m_InstancingCapacity: 64
@@ -11260,8 +11260,7 @@ MonoBehaviour:
   - {fileID: 8926484042661614995}
   m_OutputSlots:
   - {fileID: 8926484042661614999}
-  m_Subgraph: {fileID: 5371698745253816930, guid: 98f236f2b3ba0b14393b67b5897ed6ca,
-    type: 3}
+  m_Subgraph: {fileID: 5371698745253816930, guid: 98f236f2b3ba0b14393b67b5897ed6ca, type: 3}
 --- !u!114 &8926484042661614991
 MonoBehaviour:
   m_ObjectHideFlags: 0

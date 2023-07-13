@@ -43,3 +43,5 @@ EditorSettings:
   m_CacheServerEnableAuth: 0
   m_CacheServerEnableTls: 0
   m_CacheServerValidationMode: 2
+  m_CacheServerDownloadBatchSize: 128
+  m_EnableEnlightenBakedGI: 0
