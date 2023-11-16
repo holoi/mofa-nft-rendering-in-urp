@@ -22,7 +22,7 @@ For Version0.1, all nfts are composed of object "Weapon" and object "Field".
 
 "Weapon" is the shaple in center, and "Field" is the particle field around it.
 
-###“Weapon”
+### “Weapon”
 
 "Field" is maily influenced by the vfx asset attached:
 
