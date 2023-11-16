@@ -43,6 +43,5 @@ Among all the properties, "SDF" and "SDF(A)" control the shape of "Field"
 
 ## Reference
 
-https://github.com/keijiro/SdfVfxSamples
-
-https://github.com/keijiro/SushiVfx
+1. https://github.com/keijiro/SdfVfxSamples
+2. https://github.com/keijiro/SushiVfx
