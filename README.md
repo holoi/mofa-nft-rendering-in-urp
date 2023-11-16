@@ -21,14 +21,17 @@ For Version0.1, all nfts are composed of object "Weapon" and object "Field".
 <img width="306" alt="image" src="https://github.com/holoi/mofa-nft-rendering-in-urp/assets/52849063/1ef5aeda-26ed-4173-82db-838f9cb0bfa2">
 
 "Weapon" is the shaple in center, and "Field" is the particle field around it.
-“Weapon”
+
+###“Weapon”
+
 "Field" is maily influenced by the vfx asset attached:
 
 <img width="314" alt="image" src="https://github.com/holoi/mofa-nft-rendering-in-urp/assets/52849063/12535d77-ec88-432f-b9f5-5cf582253e73">
 
 Among all the properties, "SDF Texture" controls the shape of "Weapon".
 
-"Field"
+### "Field"
+
 "Field" is maily influenced by the vfx asset attached:
 
 <img width="315" alt="image" src="https://github.com/holoi/mofa-nft-rendering-in-urp/assets/52849063/1ab3540f-2482-4534-be28-c4f5e57e495e">
@@ -41,4 +44,5 @@ Among all the properties, "SDF" and "SDF(A)" control the shape of "Field"
 ## Reference
 
 https://github.com/keijiro/SdfVfxSamples
+
 https://github.com/keijiro/SushiVfx
