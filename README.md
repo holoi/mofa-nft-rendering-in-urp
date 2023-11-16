@@ -18,7 +18,7 @@ https://github.com/holoi/mofa-nft-rendering-in-urp/assets/52849063/b4e247ce-956e
 ## How does it work
 For Version0.1, all nfts are composed of object "Weapon" and object "Field".
 
-<img width="307" alt="image" src="https://github.com/holoi/mofa-nft-rendering-in-urp/assets/52849063/9eaba082-921b-468b-809c-7f68e1074a1f">
+<img width="306" alt="image" src="https://github.com/holoi/mofa-nft-rendering-in-urp/assets/52849063/1ef5aeda-26ed-4173-82db-838f9cb0bfa2">
 
 "Weapon" is the shaple in center, and "Field" is the particle field around it.
 “Weapon”
