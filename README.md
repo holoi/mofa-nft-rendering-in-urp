@@ -1,4 +1,4 @@
-<img width="314" alt="image" src="https://github.com/holoi/mofa-nft-rendering-in-urp/assets/52849063/aa159741-0837-4672-9e0c-690a9aad2579"># mofa-nft-rendering-in-urp
+# mofa-nft-rendering-in-urp
 This is the rendering project for the MOFA project, primarily responsible for creating and outputting the visual content of MOFA NFTs. In this project, there are visuals for three early versions of NFTs and one created during the 2023 Flow Hackathon. They are located in the scenes 'NFT Version 1' and 'NFT Version 2_Flow.'
 
 ## Demos
