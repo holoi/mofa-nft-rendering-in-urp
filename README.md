@@ -14,8 +14,12 @@ https://github.com/holoi/mofa-nft-rendering-in-urp/assets/52849063/ee1d7455-59b6
 ### Mofa-Nature
 https://github.com/holoi/mofa-nft-rendering-in-urp/assets/52849063/b4e247ce-956e-410e-84ad-bc66f9612c26
 
+## System requirements
 
-## How does it work
+Unity: 2023.3.12f1 and above.
+
+## How to try it
+
 For Version0.1, all nfts are composed of object "Weapon" and object "Field".
 
 <img width="306" alt="image" src="https://github.com/holoi/mofa-nft-rendering-in-urp/assets/52849063/1ef5aeda-26ed-4173-82db-838f9cb0bfa2">
@@ -38,15 +42,18 @@ Among all the properties, "SDF Texture" controls the shape of "Weapon".
 
 Among all the properties, "SDF" and "SDF(A)" control the shape of "Field"。
 
-### Custom Visual: Weapon
+## Create you own visuals
+
 Using Unity SDF Bake Tool is the fastest way to create your own sdf textures for "Weapon":
+
 1. Create or download a 3d model
 2. Import to Unity.
 3. Open SDF Bake Tool, drag the mesh to it and bake.
 For more information about how to use SDF Bake Tool: https://docs.unity3d.com/Packages/com.unity.visualeffectgraph@15.0/manual/sdf-bake-tool.html#:~:text=The%20SDF%20Bake%20Tool%20is,use%20in%20a%20visual%20effect.
 
 
-### Custom Visual: Field
+Using external tools to vreate your sdf textures for "Field"
+
 1. There are some sdf textures under: "NFT"->"Weapons Resources"->"SDFTextures", you can drag them into "Field" objedct to try it out. 
 2. If you got your own sdf textures, import to Unity and drag to "Field".
 3. Recommended Tools：
